@@ -45,13 +45,17 @@ let string = prompt('Scrivi una parola');
 function isPalindrome(string) {
 
     let reverse = string.split('').reverse().join('');
+    let message;
 
     if (reverse == string) {
-        let message = 'La tua parola è polindroma';
+        message = 'La tua parola è polindroma';
     } else {
-    let message = 'La tua parola non è polindroma';
+        message = 'La tua parola non è polindroma';
     }
-    console.log(isPalindrome(string));
+    console.log(message);
+    alert(message);
 }
 
+
 // 4. Output
+console.log(isPalindrome(string));
