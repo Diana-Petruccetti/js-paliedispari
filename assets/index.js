@@ -36,7 +36,6 @@ Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (u
 
 //CREA SISTEMA CONTROLLO PAROLE PALINDROME
 // 1. Preparazione
-let message;
 
 // 2. Raccolta Dati
 // Prompt che chiede all'utente una parola
@@ -48,10 +47,11 @@ function isPalindrome(string) {
     let reverse = string.split('').reverse().join('');
 
     if (reverse == string) {
-        message = 'La tua parola è polindroma';
+        let message = 'La tua parola è polindroma';
+    } else {
+    let message = 'La tua parola non è polindroma';
     }
-    message = 'La tua parola non è polindroma';
+    console.log(isPalindrome(string));
 }
 
-console.log(isPalindrome);
 // 4. Output
